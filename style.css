@@ -1,0 +1,135 @@
+/*  Margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colors and fonts */
+body {
+    background: linear-gradient(to right, #f8f8f8, #e6e6e6);
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 700;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h2, h3,h4 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Container styling */
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Card styling */
+.card-white {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    text-align:center;
+    width: 100%;
+}
+
+/* Marquee styling */
+marquee {
+    font-size: 18px;
+    color: black;
+}
+
+/* Profile image styling */
+.img-circle {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    display: block;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling */
+.btn-blue{
+    background-color: #6B72E1;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    transition: background-color 0.3s ease;
+}
+
+.btn-blue:hover {
+    background-color: black;
+    transition: background-color 0.3s ease;
+}
+
+/* List styling */
+.list-inline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.list-inline li {
+    display: inline-block;
+    padding: 0PX;
+    margin-right: 10px;
+}
+
+#introduction p {
+    margin-bottom: 20px;
+}
+
+/* Social media icon styling */
+.fab {
+    color: rgb(230,230,230);
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+/* Social media icon hover effect */
+.fab:hover {
+    color: #e6451f;
+}
+
+/* Responsive Design container */
+@media screen and (max-width: 720px) {
+    .container {
+        width: 600px;
+        grid-template-columns: 1fr;
+    }
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 400px;
+        grid-template-columns: 1fr;
+}
